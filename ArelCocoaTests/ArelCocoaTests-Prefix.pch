@@ -1,0 +1,16 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+
+#define SPT_CEDAR_SYNTAX
+#import <Specta/Specta.h>
+
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+
+#import <OCMock/OCMock.h>
+#endif

@@ -1,0 +1,1060 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2825D31818C60301008DAD5C /* ARELAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D31718C60301008DAD5C /* ARELAttribute.m */; };
+		2825D31C18C6235B008DAD5C /* ARELAliasPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D31B18C6235B008DAD5C /* ARELAliasPrediction.m */; };
+		2825D31F18C6245E008DAD5C /* ARELAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D31E18C6245E008DAD5C /* ARELAttributes.m */; };
+		2825D32218C62946008DAD5C /* ARELCrud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D32118C62946008DAD5C /* ARELCrud.m */; };
+		2825D32518C62A27008DAD5C /* ARELExpressions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D32418C62A27008DAD5C /* ARELExpressions.m */; };
+		2825D32818C62D04008DAD5C /* ARELFactoryMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D32718C62D04008DAD5C /* ARELFactoryMethods.m */; };
+		2825D32B18C6337F008DAD5C /* ARELMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D32A18C6337F008DAD5C /* ARELMath.m */; };
+		2825D32E18C634D1008DAD5C /* ARELOrderPredications.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D32D18C634D1008DAD5C /* ARELOrderPredications.m */; };
+		2825D33118C63568008DAD5C /* ARELWindowPredictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D33018C63568008DAD5C /* ARELWindowPredictions.m */; };
+		2825D33418C6389A008DAD5C /* ARELPredictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D33318C6389A008DAD5C /* ARELPredictions.m */; };
+		2825D33A18C64FEB008DAD5C /* RXConcreteProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2825D33918C64FEB008DAD5C /* RXConcreteProtocol.m */; };
+		28710A5A18C235D300E1002C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28710A5918C235D300E1002C /* Foundation.framework */; };
+		28710A5F18C235D300E1002C /* ArelCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28710A5E18C235D300E1002C /* ArelCocoa.h */; };
+		28710A6818C235D300E1002C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28710A6718C235D300E1002C /* XCTest.framework */; };
+		28710A6918C235D300E1002C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28710A5918C235D300E1002C /* Foundation.framework */; };
+		28710A6B18C235D300E1002C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28710A6A18C235D300E1002C /* UIKit.framework */; };
+		28710A6E18C235D300E1002C /* libArelCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28710A5618C235D300E1002C /* libArelCocoa.a */; };
+		28710A7418C235D300E1002C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28710A7218C235D300E1002C /* InfoPlist.strings */; };
+		28710A8218C239B400E1002C /* ARELTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A8118C239B400E1002C /* ARELTable.m */; };
+		28710A8718C239FD00E1002C /* ARELTableSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A8618C239FD00E1002C /* ARELTableSpec.m */; };
+		28710A9018C23C7A00E1002C /* ARELColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A8F18C23C7A00E1002C /* ARELColumn.m */; };
+		28710A9318C23ECC00E1002C /* ARELConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A9218C23ECC00E1002C /* ARELConnection.m */; };
+		28710A9B18C241B300E1002C /* ARELColumnSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A9A18C241B300E1002C /* ARELColumnSpec.m */; };
+		28710AA118C2439700E1002C /* FakeConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710A9F18C2439700E1002C /* FakeConnection.m */; };
+		28710AA518C2497800E1002C /* ARELNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AA418C2497800E1002C /* ARELNode.m */; };
+		28710AAC18C24BAF00E1002C /* ARELNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AAB18C24BAF00E1002C /* ARELNodeSpec.m */; };
+		28710AB218C24E3D00E1002C /* ARELUnaryNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AB118C24E3D00E1002C /* ARELUnaryNode.m */; };
+		28710AB818C2554400E1002C /* ARELBinaryNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AB718C2554400E1002C /* ARELBinaryNode.m */; };
+		28710ABB18C2587C00E1002C /* ARELGroupingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ABA18C2587C00E1002C /* ARELGroupingNode.m */; };
+		28710ABE18C25AD900E1002C /* ARELAndNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ABD18C25AD900E1002C /* ARELAndNode.m */; };
+		28710AC718C2605D00E1002C /* ARELOrderingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AC618C2605D00E1002C /* ARELOrderingNode.m */; };
+		28710ACA18C2637900E1002C /* ARELFalseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AC918C2637900E1002C /* ARELFalseNode.m */; };
+		28710ACD18C2638500E1002C /* ARELTrueNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ACC18C2638500E1002C /* ARELTrueNode.m */; };
+		28710AD018C2643000E1002C /* ARELEqualityNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ACF18C2643000E1002C /* ARELEqualityNode.m */; };
+		28710AD618C26F8800E1002C /* ARELFunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AD518C26F8800E1002C /* ARELFunctionNode.m */; };
+		28710AD918C271EF00E1002C /* ARELCountNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AD818C271EF00E1002C /* ARELCountNode.m */; };
+		28710ADC18C272A700E1002C /* ARELDeleteStatementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ADB18C272A700E1002C /* ARELDeleteStatementNode.m */; };
+		28710ADF18C2735800E1002C /* ARELExtractNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710ADE18C2735800E1002C /* ARELExtractNode.m */; };
+		28710AE318C2746D00E1002C /* ARELInNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AE218C2746D00E1002C /* ARELInNode.m */; };
+		28710AE618C2749300E1002C /* ARELInfixOperationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AE518C2749300E1002C /* ARELInfixOperationNode.m */; };
+		28710AE918C2777900E1002C /* ARELInnerJoinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AE818C2777900E1002C /* ARELInnerJoinNode.m */; };
+		28710AEC18C277C900E1002C /* ARELOuterJoinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AEB18C277C900E1002C /* ARELOuterJoinNode.m */; };
+		28710AEF18C2780200E1002C /* ARELInsertStatementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AEE18C2780200E1002C /* ARELInsertStatementNode.m */; };
+		28710AF218C2782800E1002C /* ARELJoinSourceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AF118C2782800E1002C /* ARELJoinSourceNode.m */; };
+		28710AF518C2784800E1002C /* ARELNamedFunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AF418C2784800E1002C /* ARELNamedFunctionNode.m */; };
+		28710AF818C2787C00E1002C /* ARELOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AF718C2787C00E1002C /* ARELOverNode.m */; };
+		28710AFB18C278B200E1002C /* ARELSelectCoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AFA18C278B200E1002C /* ARELSelectCoreNode.m */; };
+		28710AFE18C278C900E1002C /* ARELSelectStatementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710AFD18C278C900E1002C /* ARELSelectStatementNode.m */; };
+		28710B0118C2791900E1002C /* ARELStringJoinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0018C2791900E1002C /* ARELStringJoinNode.m */; };
+		28710B0418C2793600E1002C /* ARELTableAliasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0318C2793600E1002C /* ARELTableAliasNode.m */; };
+		28710B0718C2796D00E1002C /* ARELDistinctNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0618C2796D00E1002C /* ARELDistinctNode.m */; };
+		28710B0A18C2799700E1002C /* ARELUnqualifiedColumnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0918C2799700E1002C /* ARELUnqualifiedColumnNode.m */; };
+		28710B0D18C279B800E1002C /* ARELUpdateStatementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0C18C279B700E1002C /* ARELUpdateStatementNode.m */; };
+		28710B1018C279D400E1002C /* ARELValuesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B0F18C279D400E1002C /* ARELValuesNode.m */; };
+		28710B1318C279F800E1002C /* ARELWindowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B1218C279F800E1002C /* ARELWindowNode.m */; };
+		28710B1618C27A1800E1002C /* ARELWithNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B1518C27A1800E1002C /* ARELWithNode.m */; };
+		28710B2018C3121C00E1002C /* ARELNotNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B1F18C3121C00E1002C /* ARELNotNodeSpec.m */; };
+		28710B2318C313E600E1002C /* ARELSqlLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B2218C313E600E1002C /* ARELSqlLiteralNode.m */; };
+		28710B2918C315C200E1002C /* ARELSqlLiteralNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B2818C315C200E1002C /* ARELSqlLiteralNodeSpec.m */; };
+		28710B2C18C3295C00E1002C /* ARELOrNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B2B18C3295C00E1002C /* ARELOrNodeSpec.m */; };
+		28710B3018C32D7A00E1002C /* ARELAndNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B2F18C32D7A00E1002C /* ARELAndNodeSpec.m */; };
+		28710B3318C32F3300E1002C /* ARELBinaryNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B3218C32F3300E1002C /* ARELBinaryNodeSpec.m */; };
+		28710B3618C32FEE00E1002C /* ARELUnaryNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B3518C32FEE00E1002C /* ARELUnaryNodeSpec.m */; };
+		28710B3918C330AE00E1002C /* ARELAsNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B3818C330AE00E1002C /* ARELAsNodeSpec.m */; };
+		28710B3C18C3337200E1002C /* ARELAscendingNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B3B18C3337200E1002C /* ARELAscendingNodeSpec.m */; };
+		28710B3F18C333A400E1002C /* ARELDescendingNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B3E18C333A400E1002C /* ARELDescendingNodeSpec.m */; };
+		28710B4318C339EC00E1002C /* ARELCountNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B4218C339EC00E1002C /* ARELCountNodeSpec.m */; };
+		28710B4718C3411A00E1002C /* ARELFunctionNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B4618C3411A00E1002C /* ARELFunctionNodeSpec.m */; };
+		28710B4A18C3829B00E1002C /* ARELDeleteStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B4918C3829B00E1002C /* ARELDeleteStatementSpec.m */; };
+		28710B4D18C383DA00E1002C /* ARELDistinctNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B4C18C383DA00E1002C /* ARELDistinctNodeSpec.m */; };
+		28710B5018C3849300E1002C /* ARELEqualityNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B4F18C3849300E1002C /* ARELEqualityNodeSpec.m */; };
+		28710B5318C384EF00E1002C /* ARELExtractNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B5218C384EF00E1002C /* ARELExtractNodeSpec.m */; };
+		28710B5718C3878C00E1002C /* ARELFalseNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B5618C3878C00E1002C /* ARELFalseNodeSpec.m */; };
+		28710B5918C387B700E1002C /* ARELTrueNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B5818C387B700E1002C /* ARELTrueNodeSpec.m */; };
+		28710B5F18C38CCE00E1002C /* ARELGroupingNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B5E18C38CCE00E1002C /* ARELGroupingNodeSpec.m */; };
+		28710B6118C38D0900E1002C /* ARELInfixOperationNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6018C38D0900E1002C /* ARELInfixOperationNodeSpec.m */; };
+		28710B6318C38D5D00E1002C /* ARELInsertStatementNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6218C38D5D00E1002C /* ARELInsertStatementNodeSpec.m */; };
+		28710B6518C3911500E1002C /* ARELNamedFunctionNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6418C3911500E1002C /* ARELNamedFunctionNodeSpec.m */; };
+		28710B6718C3950900E1002C /* ARELOverNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6618C3950900E1002C /* ARELOverNodeSpec.m */; };
+		28710B6918C3953800E1002C /* ARELSelectCoreNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6818C3953800E1002C /* ARELSelectCoreNodeSpec.m */; };
+		28710B6B18C3955700E1002C /* ARELSelectStatementNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6A18C3955700E1002C /* ARELSelectStatementNodeSpec.m */; };
+		28710B6D18C3966700E1002C /* ARELSumNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6C18C3966700E1002C /* ARELSumNodeSpec.m */; };
+		28710B6F18C3969500E1002C /* ARELTableAliasNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B6E18C3969500E1002C /* ARELTableAliasNodeSpec.m */; };
+		28710B7118C396D100E1002C /* ARELUpdateStatementNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B7018C396D100E1002C /* ARELUpdateStatementNodeSpec.m */; };
+		28710B7318C396F700E1002C /* ARELWindowNodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28710B7218C396F700E1002C /* ARELWindowNodeSpec.m */; };
+		28E5D65C18C5A23F008FA7D2 /* ARELTreeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D65B18C5A23F008FA7D2 /* ARELTreeManager.m */; };
+		28E5D65F18C5A2CB008FA7D2 /* ARELSelectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D65E18C5A2CB008FA7D2 /* ARELSelectManager.m */; };
+		28E5D66118C5A404008FA7D2 /* ARELSelectManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D66018C5A404008FA7D2 /* ARELSelectManagerSpec.m */; };
+		28E5D66518C5A6C1008FA7D2 /* ARELVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D66418C5A6C1008FA7D2 /* ARELVisitor.m */; };
+		28E5D66818C5C9A2008FA7D2 /* ARELToSqlVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D66718C5C9A2008FA7D2 /* ARELToSqlVisitor.m */; };
+		28E5D66E18C5DA9D008FA7D2 /* ARELToSqlVisitorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5D66D18C5DA9D008FA7D2 /* ARELToSqlVisitorSpec.m */; };
+		FF3BB8B56B6B476B91928F77 /* libPods-ArelCocoaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099FEA8C73B74BAABEA88B89 /* libPods-ArelCocoaTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28710A6C18C235D300E1002C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28710A4E18C235D300E1002C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28710A5518C235D300E1002C;
+			remoteInfo = ArelCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28710A5418C235D300E1002C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				28710A5F18C235D300E1002C /* ArelCocoa.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		099FEA8C73B74BAABEA88B89 /* libPods-ArelCocoaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArelCocoaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2825D31618C60301008DAD5C /* ARELAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELAttribute.h; sourceTree = "<group>"; };
+		2825D31718C60301008DAD5C /* ARELAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAttribute.m; sourceTree = "<group>"; };
+		2825D31A18C6235B008DAD5C /* ARELAliasPrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELAliasPrediction.h; sourceTree = "<group>"; };
+		2825D31B18C6235B008DAD5C /* ARELAliasPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAliasPrediction.m; sourceTree = "<group>"; };
+		2825D31D18C6245E008DAD5C /* ARELAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELAttributes.h; sourceTree = "<group>"; };
+		2825D31E18C6245E008DAD5C /* ARELAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAttributes.m; sourceTree = "<group>"; };
+		2825D32018C62946008DAD5C /* ARELCrud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELCrud.h; sourceTree = "<group>"; };
+		2825D32118C62946008DAD5C /* ARELCrud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELCrud.m; sourceTree = "<group>"; };
+		2825D32318C62A27008DAD5C /* ARELExpressions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELExpressions.h; sourceTree = "<group>"; };
+		2825D32418C62A27008DAD5C /* ARELExpressions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELExpressions.m; sourceTree = "<group>"; };
+		2825D32618C62D04008DAD5C /* ARELFactoryMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELFactoryMethods.h; sourceTree = "<group>"; };
+		2825D32718C62D04008DAD5C /* ARELFactoryMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELFactoryMethods.m; sourceTree = "<group>"; };
+		2825D32918C6337F008DAD5C /* ARELMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELMath.h; sourceTree = "<group>"; };
+		2825D32A18C6337F008DAD5C /* ARELMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELMath.m; sourceTree = "<group>"; };
+		2825D32C18C634D1008DAD5C /* ARELOrderPredications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELOrderPredications.h; sourceTree = "<group>"; };
+		2825D32D18C634D1008DAD5C /* ARELOrderPredications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOrderPredications.m; sourceTree = "<group>"; };
+		2825D32F18C63568008DAD5C /* ARELWindowPredictions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELWindowPredictions.h; sourceTree = "<group>"; };
+		2825D33018C63568008DAD5C /* ARELWindowPredictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELWindowPredictions.m; sourceTree = "<group>"; };
+		2825D33218C6389A008DAD5C /* ARELPredictions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELPredictions.h; sourceTree = "<group>"; };
+		2825D33318C6389A008DAD5C /* ARELPredictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELPredictions.m; sourceTree = "<group>"; };
+		2825D33818C64FEB008DAD5C /* RXConcreteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXConcreteProtocol.h; sourceTree = "<group>"; };
+		2825D33918C64FEB008DAD5C /* RXConcreteProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXConcreteProtocol.m; sourceTree = "<group>"; };
+		28710A5618C235D300E1002C /* libArelCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArelCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		28710A5918C235D300E1002C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28710A5D18C235D300E1002C /* ArelCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArelCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		28710A5E18C235D300E1002C /* ArelCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArelCocoa.h; sourceTree = "<group>"; };
+		28710A6618C235D300E1002C /* ArelCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArelCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28710A6718C235D300E1002C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		28710A6A18C235D300E1002C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		28710A7118C235D300E1002C /* ArelCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArelCocoaTests-Info.plist"; sourceTree = "<group>"; };
+		28710A7318C235D300E1002C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28710A7F18C238B400E1002C /* ArelCocoaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArelCocoaTests-Prefix.pch"; sourceTree = "<group>"; };
+		28710A8018C239B400E1002C /* ARELTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELTable.h; sourceTree = "<group>"; };
+		28710A8118C239B400E1002C /* ARELTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTable.m; sourceTree = "<group>"; };
+		28710A8618C239FD00E1002C /* ARELTableSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTableSpec.m; sourceTree = "<group>"; };
+		28710A8E18C23C7A00E1002C /* ARELColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELColumn.h; sourceTree = "<group>"; };
+		28710A8F18C23C7A00E1002C /* ARELColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELColumn.m; sourceTree = "<group>"; };
+		28710A9118C23ECC00E1002C /* ARELConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELConnection.h; sourceTree = "<group>"; };
+		28710A9218C23ECC00E1002C /* ARELConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELConnection.m; sourceTree = "<group>"; };
+		28710A9A18C241B300E1002C /* ARELColumnSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELColumnSpec.m; sourceTree = "<group>"; };
+		28710A9F18C2439700E1002C /* FakeConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeConnection.m; sourceTree = "<group>"; };
+		28710AA018C2439700E1002C /* FakeConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeConnection.h; sourceTree = "<group>"; };
+		28710AA318C2497800E1002C /* ARELNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELNode.h; sourceTree = "<group>"; };
+		28710AA418C2497800E1002C /* ARELNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELNode.m; sourceTree = "<group>"; };
+		28710AAB18C24BAF00E1002C /* ARELNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELNodeSpec.m; sourceTree = "<group>"; };
+		28710AB018C24E3D00E1002C /* ARELUnaryNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELUnaryNode.h; sourceTree = "<group>"; };
+		28710AB118C24E3D00E1002C /* ARELUnaryNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELUnaryNode.m; sourceTree = "<group>"; };
+		28710AB618C2554400E1002C /* ARELBinaryNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELBinaryNode.h; sourceTree = "<group>"; };
+		28710AB718C2554400E1002C /* ARELBinaryNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELBinaryNode.m; sourceTree = "<group>"; };
+		28710AB918C2587C00E1002C /* ARELGroupingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELGroupingNode.h; sourceTree = "<group>"; };
+		28710ABA18C2587C00E1002C /* ARELGroupingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELGroupingNode.m; sourceTree = "<group>"; };
+		28710ABC18C25AD900E1002C /* ARELAndNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELAndNode.h; sourceTree = "<group>"; };
+		28710ABD18C25AD900E1002C /* ARELAndNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAndNode.m; sourceTree = "<group>"; };
+		28710AC518C2605D00E1002C /* ARELOrderingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELOrderingNode.h; sourceTree = "<group>"; };
+		28710AC618C2605D00E1002C /* ARELOrderingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOrderingNode.m; sourceTree = "<group>"; };
+		28710AC818C2637900E1002C /* ARELFalseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELFalseNode.h; sourceTree = "<group>"; };
+		28710AC918C2637900E1002C /* ARELFalseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELFalseNode.m; sourceTree = "<group>"; };
+		28710ACB18C2638500E1002C /* ARELTrueNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELTrueNode.h; sourceTree = "<group>"; };
+		28710ACC18C2638500E1002C /* ARELTrueNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTrueNode.m; sourceTree = "<group>"; };
+		28710ACE18C2643000E1002C /* ARELEqualityNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELEqualityNode.h; sourceTree = "<group>"; };
+		28710ACF18C2643000E1002C /* ARELEqualityNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELEqualityNode.m; sourceTree = "<group>"; };
+		28710AD418C26F8800E1002C /* ARELFunctionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELFunctionNode.h; sourceTree = "<group>"; };
+		28710AD518C26F8800E1002C /* ARELFunctionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELFunctionNode.m; sourceTree = "<group>"; };
+		28710AD718C271EF00E1002C /* ARELCountNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELCountNode.h; sourceTree = "<group>"; };
+		28710AD818C271EF00E1002C /* ARELCountNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELCountNode.m; sourceTree = "<group>"; };
+		28710ADA18C272A700E1002C /* ARELDeleteStatementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELDeleteStatementNode.h; sourceTree = "<group>"; };
+		28710ADB18C272A700E1002C /* ARELDeleteStatementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELDeleteStatementNode.m; sourceTree = "<group>"; };
+		28710ADD18C2735800E1002C /* ARELExtractNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELExtractNode.h; sourceTree = "<group>"; };
+		28710ADE18C2735800E1002C /* ARELExtractNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELExtractNode.m; sourceTree = "<group>"; };
+		28710AE118C2746D00E1002C /* ARELInNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELInNode.h; sourceTree = "<group>"; };
+		28710AE218C2746D00E1002C /* ARELInNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInNode.m; sourceTree = "<group>"; };
+		28710AE418C2749300E1002C /* ARELInfixOperationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELInfixOperationNode.h; sourceTree = "<group>"; };
+		28710AE518C2749300E1002C /* ARELInfixOperationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInfixOperationNode.m; sourceTree = "<group>"; };
+		28710AE718C2777900E1002C /* ARELInnerJoinNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELInnerJoinNode.h; sourceTree = "<group>"; };
+		28710AE818C2777900E1002C /* ARELInnerJoinNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInnerJoinNode.m; sourceTree = "<group>"; };
+		28710AEA18C277C900E1002C /* ARELOuterJoinNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELOuterJoinNode.h; sourceTree = "<group>"; };
+		28710AEB18C277C900E1002C /* ARELOuterJoinNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOuterJoinNode.m; sourceTree = "<group>"; };
+		28710AED18C2780200E1002C /* ARELInsertStatementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELInsertStatementNode.h; sourceTree = "<group>"; };
+		28710AEE18C2780200E1002C /* ARELInsertStatementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInsertStatementNode.m; sourceTree = "<group>"; };
+		28710AF018C2782800E1002C /* ARELJoinSourceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELJoinSourceNode.h; sourceTree = "<group>"; };
+		28710AF118C2782800E1002C /* ARELJoinSourceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELJoinSourceNode.m; sourceTree = "<group>"; };
+		28710AF318C2784800E1002C /* ARELNamedFunctionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELNamedFunctionNode.h; sourceTree = "<group>"; };
+		28710AF418C2784800E1002C /* ARELNamedFunctionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELNamedFunctionNode.m; sourceTree = "<group>"; };
+		28710AF618C2787C00E1002C /* ARELOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELOverNode.h; sourceTree = "<group>"; };
+		28710AF718C2787C00E1002C /* ARELOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOverNode.m; sourceTree = "<group>"; };
+		28710AF918C278B200E1002C /* ARELSelectCoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELSelectCoreNode.h; sourceTree = "<group>"; };
+		28710AFA18C278B200E1002C /* ARELSelectCoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectCoreNode.m; sourceTree = "<group>"; };
+		28710AFC18C278C900E1002C /* ARELSelectStatementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELSelectStatementNode.h; sourceTree = "<group>"; };
+		28710AFD18C278C900E1002C /* ARELSelectStatementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectStatementNode.m; sourceTree = "<group>"; };
+		28710AFF18C2791900E1002C /* ARELStringJoinNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELStringJoinNode.h; sourceTree = "<group>"; };
+		28710B0018C2791900E1002C /* ARELStringJoinNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELStringJoinNode.m; sourceTree = "<group>"; };
+		28710B0218C2793600E1002C /* ARELTableAliasNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELTableAliasNode.h; sourceTree = "<group>"; };
+		28710B0318C2793600E1002C /* ARELTableAliasNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTableAliasNode.m; sourceTree = "<group>"; };
+		28710B0518C2796D00E1002C /* ARELDistinctNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELDistinctNode.h; sourceTree = "<group>"; };
+		28710B0618C2796D00E1002C /* ARELDistinctNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELDistinctNode.m; sourceTree = "<group>"; };
+		28710B0818C2799700E1002C /* ARELUnqualifiedColumnNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELUnqualifiedColumnNode.h; sourceTree = "<group>"; };
+		28710B0918C2799700E1002C /* ARELUnqualifiedColumnNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELUnqualifiedColumnNode.m; sourceTree = "<group>"; };
+		28710B0B18C279B700E1002C /* ARELUpdateStatementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELUpdateStatementNode.h; sourceTree = "<group>"; };
+		28710B0C18C279B700E1002C /* ARELUpdateStatementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELUpdateStatementNode.m; sourceTree = "<group>"; };
+		28710B0E18C279D400E1002C /* ARELValuesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELValuesNode.h; sourceTree = "<group>"; };
+		28710B0F18C279D400E1002C /* ARELValuesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELValuesNode.m; sourceTree = "<group>"; };
+		28710B1118C279F800E1002C /* ARELWindowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELWindowNode.h; sourceTree = "<group>"; };
+		28710B1218C279F800E1002C /* ARELWindowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELWindowNode.m; sourceTree = "<group>"; };
+		28710B1418C27A1800E1002C /* ARELWithNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELWithNode.h; sourceTree = "<group>"; };
+		28710B1518C27A1800E1002C /* ARELWithNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELWithNode.m; sourceTree = "<group>"; };
+		28710B1A18C3007800E1002C /* ARELNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELNodes.h; sourceTree = "<group>"; };
+		28710B1F18C3121C00E1002C /* ARELNotNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELNotNodeSpec.m; sourceTree = "<group>"; };
+		28710B2118C313E600E1002C /* ARELSqlLiteralNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELSqlLiteralNode.h; sourceTree = "<group>"; };
+		28710B2218C313E600E1002C /* ARELSqlLiteralNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSqlLiteralNode.m; sourceTree = "<group>"; };
+		28710B2818C315C200E1002C /* ARELSqlLiteralNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSqlLiteralNodeSpec.m; sourceTree = "<group>"; };
+		28710B2B18C3295C00E1002C /* ARELOrNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOrNodeSpec.m; sourceTree = "<group>"; };
+		28710B2F18C32D7A00E1002C /* ARELAndNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAndNodeSpec.m; sourceTree = "<group>"; };
+		28710B3218C32F3300E1002C /* ARELBinaryNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELBinaryNodeSpec.m; sourceTree = "<group>"; };
+		28710B3518C32FEE00E1002C /* ARELUnaryNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELUnaryNodeSpec.m; sourceTree = "<group>"; };
+		28710B3818C330AE00E1002C /* ARELAsNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAsNodeSpec.m; sourceTree = "<group>"; };
+		28710B3B18C3337200E1002C /* ARELAscendingNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELAscendingNodeSpec.m; sourceTree = "<group>"; };
+		28710B3E18C333A400E1002C /* ARELDescendingNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELDescendingNodeSpec.m; sourceTree = "<group>"; };
+		28710B4218C339EC00E1002C /* ARELCountNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELCountNodeSpec.m; sourceTree = "<group>"; };
+		28710B4618C3411A00E1002C /* ARELFunctionNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELFunctionNodeSpec.m; sourceTree = "<group>"; };
+		28710B4918C3829B00E1002C /* ARELDeleteStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELDeleteStatementSpec.m; sourceTree = "<group>"; };
+		28710B4C18C383DA00E1002C /* ARELDistinctNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELDistinctNodeSpec.m; sourceTree = "<group>"; };
+		28710B4F18C3849300E1002C /* ARELEqualityNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELEqualityNodeSpec.m; sourceTree = "<group>"; };
+		28710B5218C384EF00E1002C /* ARELExtractNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELExtractNodeSpec.m; sourceTree = "<group>"; };
+		28710B5618C3878C00E1002C /* ARELFalseNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELFalseNodeSpec.m; sourceTree = "<group>"; };
+		28710B5818C387B700E1002C /* ARELTrueNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTrueNodeSpec.m; sourceTree = "<group>"; };
+		28710B5E18C38CCE00E1002C /* ARELGroupingNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELGroupingNodeSpec.m; sourceTree = "<group>"; };
+		28710B6018C38D0900E1002C /* ARELInfixOperationNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInfixOperationNodeSpec.m; sourceTree = "<group>"; };
+		28710B6218C38D5D00E1002C /* ARELInsertStatementNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELInsertStatementNodeSpec.m; sourceTree = "<group>"; };
+		28710B6418C3911500E1002C /* ARELNamedFunctionNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELNamedFunctionNodeSpec.m; sourceTree = "<group>"; };
+		28710B6618C3950900E1002C /* ARELOverNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELOverNodeSpec.m; sourceTree = "<group>"; };
+		28710B6818C3953800E1002C /* ARELSelectCoreNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectCoreNodeSpec.m; sourceTree = "<group>"; };
+		28710B6A18C3955700E1002C /* ARELSelectStatementNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectStatementNodeSpec.m; sourceTree = "<group>"; };
+		28710B6C18C3966700E1002C /* ARELSumNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSumNodeSpec.m; sourceTree = "<group>"; };
+		28710B6E18C3969500E1002C /* ARELTableAliasNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTableAliasNodeSpec.m; sourceTree = "<group>"; };
+		28710B7018C396D100E1002C /* ARELUpdateStatementNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELUpdateStatementNodeSpec.m; sourceTree = "<group>"; };
+		28710B7218C396F700E1002C /* ARELWindowNodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELWindowNodeSpec.m; sourceTree = "<group>"; };
+		28E5D65A18C5A23F008FA7D2 /* ARELTreeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELTreeManager.h; sourceTree = "<group>"; };
+		28E5D65B18C5A23F008FA7D2 /* ARELTreeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELTreeManager.m; sourceTree = "<group>"; };
+		28E5D65D18C5A2CB008FA7D2 /* ARELSelectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELSelectManager.h; sourceTree = "<group>"; };
+		28E5D65E18C5A2CB008FA7D2 /* ARELSelectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectManager.m; sourceTree = "<group>"; };
+		28E5D66018C5A404008FA7D2 /* ARELSelectManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELSelectManagerSpec.m; sourceTree = "<group>"; };
+		28E5D66318C5A6C1008FA7D2 /* ARELVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELVisitor.h; sourceTree = "<group>"; };
+		28E5D66418C5A6C1008FA7D2 /* ARELVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELVisitor.m; sourceTree = "<group>"; };
+		28E5D66618C5C9A2008FA7D2 /* ARELToSqlVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARELToSqlVisitor.h; sourceTree = "<group>"; };
+		28E5D66718C5C9A2008FA7D2 /* ARELToSqlVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELToSqlVisitor.m; sourceTree = "<group>"; };
+		28E5D66D18C5DA9D008FA7D2 /* ARELToSqlVisitorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARELToSqlVisitorSpec.m; sourceTree = "<group>"; };
+		78C877DC77CC4CD5914C9A08 /* Pods-ArelCocoaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArelCocoaTests.xcconfig"; path = "Pods/Pods-ArelCocoaTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28710A5318C235D300E1002C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28710A5A18C235D300E1002C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28710A6318C235D300E1002C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28710A6818C235D300E1002C /* XCTest.framework in Frameworks */,
+				28710A6E18C235D300E1002C /* libArelCocoa.a in Frameworks */,
+				28710A6B18C235D300E1002C /* UIKit.framework in Frameworks */,
+				28710A6918C235D300E1002C /* Foundation.framework in Frameworks */,
+				FF3BB8B56B6B476B91928F77 /* libPods-ArelCocoaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2825D31918C62349008DAD5C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2825D31A18C6235B008DAD5C /* ARELAliasPrediction.h */,
+				2825D31B18C6235B008DAD5C /* ARELAliasPrediction.m */,
+				2825D31D18C6245E008DAD5C /* ARELAttributes.h */,
+				2825D31E18C6245E008DAD5C /* ARELAttributes.m */,
+				2825D32018C62946008DAD5C /* ARELCrud.h */,
+				2825D32118C62946008DAD5C /* ARELCrud.m */,
+				2825D32318C62A27008DAD5C /* ARELExpressions.h */,
+				2825D32418C62A27008DAD5C /* ARELExpressions.m */,
+				2825D32618C62D04008DAD5C /* ARELFactoryMethods.h */,
+				2825D32718C62D04008DAD5C /* ARELFactoryMethods.m */,
+				2825D32918C6337F008DAD5C /* ARELMath.h */,
+				2825D32A18C6337F008DAD5C /* ARELMath.m */,
+				2825D32C18C634D1008DAD5C /* ARELOrderPredications.h */,
+				2825D32D18C634D1008DAD5C /* ARELOrderPredications.m */,
+				2825D32F18C63568008DAD5C /* ARELWindowPredictions.h */,
+				2825D33018C63568008DAD5C /* ARELWindowPredictions.m */,
+				2825D33218C6389A008DAD5C /* ARELPredictions.h */,
+				2825D33318C6389A008DAD5C /* ARELPredictions.m */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		2825D33718C64FEB008DAD5C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				2825D33818C64FEB008DAD5C /* RXConcreteProtocol.h */,
+				2825D33918C64FEB008DAD5C /* RXConcreteProtocol.m */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		28710A4D18C235D300E1002C = {
+			isa = PBXGroup;
+			children = (
+				2825D33718C64FEB008DAD5C /* Externals */,
+				28710A5B18C235D300E1002C /* ArelCocoa */,
+				28710A6F18C235D300E1002C /* ArelCocoaTests */,
+				28710A5818C235D300E1002C /* Frameworks */,
+				28710A5718C235D300E1002C /* Products */,
+				78C877DC77CC4CD5914C9A08 /* Pods-ArelCocoaTests.xcconfig */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		28710A5718C235D300E1002C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28710A5618C235D300E1002C /* libArelCocoa.a */,
+				28710A6618C235D300E1002C /* ArelCocoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28710A5818C235D300E1002C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28710A5918C235D300E1002C /* Foundation.framework */,
+				28710A6718C235D300E1002C /* XCTest.framework */,
+				28710A6A18C235D300E1002C /* UIKit.framework */,
+				099FEA8C73B74BAABEA88B89 /* libPods-ArelCocoaTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28710A5B18C235D300E1002C /* ArelCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				28710A5E18C235D300E1002C /* ArelCocoa.h */,
+				28710A8018C239B400E1002C /* ARELTable.h */,
+				28710A8118C239B400E1002C /* ARELTable.m */,
+				28E5D65A18C5A23F008FA7D2 /* ARELTreeManager.h */,
+				28E5D65B18C5A23F008FA7D2 /* ARELTreeManager.m */,
+				28E5D65D18C5A2CB008FA7D2 /* ARELSelectManager.h */,
+				28E5D65E18C5A2CB008FA7D2 /* ARELSelectManager.m */,
+				2825D31918C62349008DAD5C /* Modules */,
+				28E5D66218C5A668008FA7D2 /* Visitors */,
+				28710AA218C2496E00E1002C /* Nodes */,
+				28710A9718C2404F00E1002C /* Connection */,
+				28710A5C18C235D300E1002C /* Supporting Files */,
+				2825D31618C60301008DAD5C /* ARELAttribute.h */,
+				2825D31718C60301008DAD5C /* ARELAttribute.m */,
+			);
+			path = ArelCocoa;
+			sourceTree = "<group>";
+		};
+		28710A5C18C235D300E1002C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28710A5D18C235D300E1002C /* ArelCocoa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28710A6F18C235D300E1002C /* ArelCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				28710A8618C239FD00E1002C /* ARELTableSpec.m */,
+				28E5D66018C5A404008FA7D2 /* ARELSelectManagerSpec.m */,
+				28E5D66918C5DA5B008FA7D2 /* Visitors */,
+				28710AA918C24B9F00E1002C /* Nodes */,
+				28710A9818C241A500E1002C /* Connection */,
+				28710A7018C235D300E1002C /* Supporting Files */,
+			);
+			path = ArelCocoaTests;
+			sourceTree = "<group>";
+		};
+		28710A7018C235D300E1002C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28710AA018C2439700E1002C /* FakeConnection.h */,
+				28710A9F18C2439700E1002C /* FakeConnection.m */,
+				28710A7118C235D300E1002C /* ArelCocoaTests-Info.plist */,
+				28710A7218C235D300E1002C /* InfoPlist.strings */,
+				28710A7F18C238B400E1002C /* ArelCocoaTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28710A9718C2404F00E1002C /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				28710A9118C23ECC00E1002C /* ARELConnection.h */,
+				28710A9218C23ECC00E1002C /* ARELConnection.m */,
+				28710A8E18C23C7A00E1002C /* ARELColumn.h */,
+				28710A8F18C23C7A00E1002C /* ARELColumn.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		28710A9818C241A500E1002C /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				28710A9A18C241B300E1002C /* ARELColumnSpec.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		28710AA218C2496E00E1002C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				28710AA318C2497800E1002C /* ARELNode.h */,
+				28710AA418C2497800E1002C /* ARELNode.m */,
+				28710AC818C2637900E1002C /* ARELFalseNode.h */,
+				28710AC918C2637900E1002C /* ARELFalseNode.m */,
+				28710ACB18C2638500E1002C /* ARELTrueNode.h */,
+				28710ACC18C2638500E1002C /* ARELTrueNode.m */,
+				28710ABC18C25AD900E1002C /* ARELAndNode.h */,
+				28710ABD18C25AD900E1002C /* ARELAndNode.m */,
+				28710B0518C2796D00E1002C /* ARELDistinctNode.h */,
+				28710B0618C2796D00E1002C /* ARELDistinctNode.m */,
+				28710AED18C2780200E1002C /* ARELInsertStatementNode.h */,
+				28710AEE18C2780200E1002C /* ARELInsertStatementNode.m */,
+				28710B0B18C279B700E1002C /* ARELUpdateStatementNode.h */,
+				28710B0C18C279B700E1002C /* ARELUpdateStatementNode.m */,
+				28710AF918C278B200E1002C /* ARELSelectCoreNode.h */,
+				28710AFA18C278B200E1002C /* ARELSelectCoreNode.m */,
+				28710AFC18C278C900E1002C /* ARELSelectStatementNode.h */,
+				28710AFD18C278C900E1002C /* ARELSelectStatementNode.m */,
+				28710B1118C279F800E1002C /* ARELWindowNode.h */,
+				28710B1218C279F800E1002C /* ARELWindowNode.m */,
+				28710AD318C26F6100E1002C /* Function */,
+				28710AD218C2648B00E1002C /* Unary */,
+				28710AD118C2645200E1002C /* Binary */,
+				28710B2118C313E600E1002C /* ARELSqlLiteralNode.h */,
+				28710B2218C313E600E1002C /* ARELSqlLiteralNode.m */,
+				28710B1A18C3007800E1002C /* ARELNodes.h */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		28710AA918C24B9F00E1002C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				28710AAB18C24BAF00E1002C /* ARELNodeSpec.m */,
+				28710B2818C315C200E1002C /* ARELSqlLiteralNodeSpec.m */,
+				28710B2F18C32D7A00E1002C /* ARELAndNodeSpec.m */,
+				28710B4C18C383DA00E1002C /* ARELDistinctNodeSpec.m */,
+				28710B5618C3878C00E1002C /* ARELFalseNodeSpec.m */,
+				28710B5818C387B700E1002C /* ARELTrueNodeSpec.m */,
+				28710B6218C38D5D00E1002C /* ARELInsertStatementNodeSpec.m */,
+				28710B6418C3911500E1002C /* ARELNamedFunctionNodeSpec.m */,
+				28710B6818C3953800E1002C /* ARELSelectCoreNodeSpec.m */,
+				28710B6A18C3955700E1002C /* ARELSelectStatementNodeSpec.m */,
+				28710B7018C396D100E1002C /* ARELUpdateStatementNodeSpec.m */,
+				28710B7218C396F700E1002C /* ARELWindowNodeSpec.m */,
+				28710B4018C339E000E1002C /* Function */,
+				28710B2D18C32D5C00E1002C /* Binary */,
+				28710B1D18C3120E00E1002C /* Unary */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		28710AD118C2645200E1002C /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				28710AB618C2554400E1002C /* ARELBinaryNode.h */,
+				28710AB718C2554400E1002C /* ARELBinaryNode.m */,
+				28710AE718C2777900E1002C /* ARELInnerJoinNode.h */,
+				28710B0E18C279D400E1002C /* ARELValuesNode.h */,
+				28710B0F18C279D400E1002C /* ARELValuesNode.m */,
+				28710AE818C2777900E1002C /* ARELInnerJoinNode.m */,
+				28710AEA18C277C900E1002C /* ARELOuterJoinNode.h */,
+				28710AEB18C277C900E1002C /* ARELOuterJoinNode.m */,
+				28710ACE18C2643000E1002C /* ARELEqualityNode.h */,
+				28710ACF18C2643000E1002C /* ARELEqualityNode.m */,
+				28710ADA18C272A700E1002C /* ARELDeleteStatementNode.h */,
+				28710ADB18C272A700E1002C /* ARELDeleteStatementNode.m */,
+				28710AE118C2746D00E1002C /* ARELInNode.h */,
+				28710AE218C2746D00E1002C /* ARELInNode.m */,
+				28710AE418C2749300E1002C /* ARELInfixOperationNode.h */,
+				28710AE518C2749300E1002C /* ARELInfixOperationNode.m */,
+				28710AF018C2782800E1002C /* ARELJoinSourceNode.h */,
+				28710AF118C2782800E1002C /* ARELJoinSourceNode.m */,
+				28710AF618C2787C00E1002C /* ARELOverNode.h */,
+				28710AF718C2787C00E1002C /* ARELOverNode.m */,
+				28710AFF18C2791900E1002C /* ARELStringJoinNode.h */,
+				28710B0018C2791900E1002C /* ARELStringJoinNode.m */,
+				28710B0218C2793600E1002C /* ARELTableAliasNode.h */,
+				28710B0318C2793600E1002C /* ARELTableAliasNode.m */,
+			);
+			name = Binary;
+			sourceTree = "<group>";
+		};
+		28710AD218C2648B00E1002C /* Unary */ = {
+			isa = PBXGroup;
+			children = (
+				28710AB018C24E3D00E1002C /* ARELUnaryNode.h */,
+				28710B1418C27A1800E1002C /* ARELWithNode.h */,
+				28710B1518C27A1800E1002C /* ARELWithNode.m */,
+				28710AB118C24E3D00E1002C /* ARELUnaryNode.m */,
+				28710AC518C2605D00E1002C /* ARELOrderingNode.h */,
+				28710AC618C2605D00E1002C /* ARELOrderingNode.m */,
+				28710AB918C2587C00E1002C /* ARELGroupingNode.h */,
+				28710ABA18C2587C00E1002C /* ARELGroupingNode.m */,
+				28710ADD18C2735800E1002C /* ARELExtractNode.h */,
+				28710ADE18C2735800E1002C /* ARELExtractNode.m */,
+				28710B0818C2799700E1002C /* ARELUnqualifiedColumnNode.h */,
+				28710B0918C2799700E1002C /* ARELUnqualifiedColumnNode.m */,
+			);
+			name = Unary;
+			sourceTree = "<group>";
+		};
+		28710AD318C26F6100E1002C /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				28710AD418C26F8800E1002C /* ARELFunctionNode.h */,
+				28710AD518C26F8800E1002C /* ARELFunctionNode.m */,
+				28710AD718C271EF00E1002C /* ARELCountNode.h */,
+				28710AD818C271EF00E1002C /* ARELCountNode.m */,
+				28710AF318C2784800E1002C /* ARELNamedFunctionNode.h */,
+				28710AF418C2784800E1002C /* ARELNamedFunctionNode.m */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		28710B1D18C3120E00E1002C /* Unary */ = {
+			isa = PBXGroup;
+			children = (
+				28710B3518C32FEE00E1002C /* ARELUnaryNodeSpec.m */,
+				28710B1F18C3121C00E1002C /* ARELNotNodeSpec.m */,
+				28710B3B18C3337200E1002C /* ARELAscendingNodeSpec.m */,
+				28710B3E18C333A400E1002C /* ARELDescendingNodeSpec.m */,
+				28710B5218C384EF00E1002C /* ARELExtractNodeSpec.m */,
+				28710B5E18C38CCE00E1002C /* ARELGroupingNodeSpec.m */,
+			);
+			name = Unary;
+			sourceTree = "<group>";
+		};
+		28710B2D18C32D5C00E1002C /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				28710B3218C32F3300E1002C /* ARELBinaryNodeSpec.m */,
+				28710B6018C38D0900E1002C /* ARELInfixOperationNodeSpec.m */,
+				28710B2B18C3295C00E1002C /* ARELOrNodeSpec.m */,
+				28710B3818C330AE00E1002C /* ARELAsNodeSpec.m */,
+				28710B4918C3829B00E1002C /* ARELDeleteStatementSpec.m */,
+				28710B4F18C3849300E1002C /* ARELEqualityNodeSpec.m */,
+				28710B6618C3950900E1002C /* ARELOverNodeSpec.m */,
+				28710B6E18C3969500E1002C /* ARELTableAliasNodeSpec.m */,
+			);
+			name = Binary;
+			sourceTree = "<group>";
+		};
+		28710B4018C339E000E1002C /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				28710B4218C339EC00E1002C /* ARELCountNodeSpec.m */,
+				28710B4618C3411A00E1002C /* ARELFunctionNodeSpec.m */,
+				28710B6C18C3966700E1002C /* ARELSumNodeSpec.m */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		28E5D66218C5A668008FA7D2 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				28E5D66318C5A6C1008FA7D2 /* ARELVisitor.h */,
+				28E5D66418C5A6C1008FA7D2 /* ARELVisitor.m */,
+				28E5D66618C5C9A2008FA7D2 /* ARELToSqlVisitor.h */,
+				28E5D66718C5C9A2008FA7D2 /* ARELToSqlVisitor.m */,
+			);
+			name = Visitors;
+			sourceTree = "<group>";
+		};
+		28E5D66918C5DA5B008FA7D2 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				28E5D66D18C5DA9D008FA7D2 /* ARELToSqlVisitorSpec.m */,
+			);
+			name = Visitors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28710A5518C235D300E1002C /* ArelCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28710A7918C235D300E1002C /* Build configuration list for PBXNativeTarget "ArelCocoa" */;
+			buildPhases = (
+				28710A5218C235D300E1002C /* Sources */,
+				28710A5318C235D300E1002C /* Frameworks */,
+				28710A5418C235D300E1002C /* CopyFiles */,
+				8B458F929625485AA197CD84 /* Warn for TODO and FIXME comments */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArelCocoa;
+			productName = ArelCocoa;
+			productReference = 28710A5618C235D300E1002C /* libArelCocoa.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		28710A6518C235D300E1002C /* ArelCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28710A7C18C235D300E1002C /* Build configuration list for PBXNativeTarget "ArelCocoaTests" */;
+			buildPhases = (
+				3F7225C57D7B4144A6C0A81F /* Check Pods Manifest.lock */,
+				28710A6218C235D300E1002C /* Sources */,
+				28710A6318C235D300E1002C /* Frameworks */,
+				28710A6418C235D300E1002C /* Resources */,
+				445C44F0DBF84346961ECE5F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28710A6D18C235D300E1002C /* PBXTargetDependency */,
+			);
+			name = ArelCocoaTests;
+			productName = ArelCocoaTests;
+			productReference = 28710A6618C235D300E1002C /* ArelCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28710A4E18C235D300E1002C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AREL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "林藍東";
+			};
+			buildConfigurationList = 28710A5118C235D300E1002C /* Build configuration list for PBXProject "ArelCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28710A4D18C235D300E1002C;
+			productRefGroup = 28710A5718C235D300E1002C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28710A5518C235D300E1002C /* ArelCocoa */,
+				28710A6518C235D300E1002C /* ArelCocoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28710A6418C235D300E1002C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28710A7418C235D300E1002C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F7225C57D7B4144A6C0A81F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		445C44F0DBF84346961ECE5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ArelCocoaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B458F929625485AA197CD84 /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28710A5218C235D300E1002C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2825D31C18C6235B008DAD5C /* ARELAliasPrediction.m in Sources */,
+				28710B0418C2793600E1002C /* ARELTableAliasNode.m in Sources */,
+				2825D33118C63568008DAD5C /* ARELWindowPredictions.m in Sources */,
+				28710A8218C239B400E1002C /* ARELTable.m in Sources */,
+				28E5D66518C5A6C1008FA7D2 /* ARELVisitor.m in Sources */,
+				28710AC718C2605D00E1002C /* ARELOrderingNode.m in Sources */,
+				2825D33A18C64FEB008DAD5C /* RXConcreteProtocol.m in Sources */,
+				28710AA518C2497800E1002C /* ARELNode.m in Sources */,
+				28710B2318C313E600E1002C /* ARELSqlLiteralNode.m in Sources */,
+				28710AD618C26F8800E1002C /* ARELFunctionNode.m in Sources */,
+				28710ABB18C2587C00E1002C /* ARELGroupingNode.m in Sources */,
+				28710AB218C24E3D00E1002C /* ARELUnaryNode.m in Sources */,
+				28E5D65C18C5A23F008FA7D2 /* ARELTreeManager.m in Sources */,
+				2825D31818C60301008DAD5C /* ARELAttribute.m in Sources */,
+				28710B0718C2796D00E1002C /* ARELDistinctNode.m in Sources */,
+				28710ADC18C272A700E1002C /* ARELDeleteStatementNode.m in Sources */,
+				28710B1018C279D400E1002C /* ARELValuesNode.m in Sources */,
+				28710AF518C2784800E1002C /* ARELNamedFunctionNode.m in Sources */,
+				28710AD918C271EF00E1002C /* ARELCountNode.m in Sources */,
+				28710AEF18C2780200E1002C /* ARELInsertStatementNode.m in Sources */,
+				28710AE918C2777900E1002C /* ARELInnerJoinNode.m in Sources */,
+				28710ACA18C2637900E1002C /* ARELFalseNode.m in Sources */,
+				2825D32E18C634D1008DAD5C /* ARELOrderPredications.m in Sources */,
+				28710B0A18C2799700E1002C /* ARELUnqualifiedColumnNode.m in Sources */,
+				28710AF218C2782800E1002C /* ARELJoinSourceNode.m in Sources */,
+				28E5D66818C5C9A2008FA7D2 /* ARELToSqlVisitor.m in Sources */,
+				2825D32518C62A27008DAD5C /* ARELExpressions.m in Sources */,
+				28710AF818C2787C00E1002C /* ARELOverNode.m in Sources */,
+				2825D32B18C6337F008DAD5C /* ARELMath.m in Sources */,
+				2825D32218C62946008DAD5C /* ARELCrud.m in Sources */,
+				28710ADF18C2735800E1002C /* ARELExtractNode.m in Sources */,
+				28710B1318C279F800E1002C /* ARELWindowNode.m in Sources */,
+				28710AB818C2554400E1002C /* ARELBinaryNode.m in Sources */,
+				28710AFE18C278C900E1002C /* ARELSelectStatementNode.m in Sources */,
+				28710A9318C23ECC00E1002C /* ARELConnection.m in Sources */,
+				28710B0D18C279B800E1002C /* ARELUpdateStatementNode.m in Sources */,
+				28710AFB18C278B200E1002C /* ARELSelectCoreNode.m in Sources */,
+				28710ABE18C25AD900E1002C /* ARELAndNode.m in Sources */,
+				2825D33418C6389A008DAD5C /* ARELPredictions.m in Sources */,
+				28710B1618C27A1800E1002C /* ARELWithNode.m in Sources */,
+				28710AE618C2749300E1002C /* ARELInfixOperationNode.m in Sources */,
+				28E5D65F18C5A2CB008FA7D2 /* ARELSelectManager.m in Sources */,
+				2825D32818C62D04008DAD5C /* ARELFactoryMethods.m in Sources */,
+				28710A9018C23C7A00E1002C /* ARELColumn.m in Sources */,
+				2825D31F18C6245E008DAD5C /* ARELAttributes.m in Sources */,
+				28710ACD18C2638500E1002C /* ARELTrueNode.m in Sources */,
+				28710B0118C2791900E1002C /* ARELStringJoinNode.m in Sources */,
+				28710AEC18C277C900E1002C /* ARELOuterJoinNode.m in Sources */,
+				28710AE318C2746D00E1002C /* ARELInNode.m in Sources */,
+				28710AD018C2643000E1002C /* ARELEqualityNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28710A6218C235D300E1002C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28710B5018C3849300E1002C /* ARELEqualityNodeSpec.m in Sources */,
+				28710B3618C32FEE00E1002C /* ARELUnaryNodeSpec.m in Sources */,
+				28710B3F18C333A400E1002C /* ARELDescendingNodeSpec.m in Sources */,
+				28710B5F18C38CCE00E1002C /* ARELGroupingNodeSpec.m in Sources */,
+				28710B6118C38D0900E1002C /* ARELInfixOperationNodeSpec.m in Sources */,
+				28710A9B18C241B300E1002C /* ARELColumnSpec.m in Sources */,
+				28710B4718C3411A00E1002C /* ARELFunctionNodeSpec.m in Sources */,
+				28710B6318C38D5D00E1002C /* ARELInsertStatementNodeSpec.m in Sources */,
+				28710A8718C239FD00E1002C /* ARELTableSpec.m in Sources */,
+				28710B6518C3911500E1002C /* ARELNamedFunctionNodeSpec.m in Sources */,
+				28710B3C18C3337200E1002C /* ARELAscendingNodeSpec.m in Sources */,
+				28710AAC18C24BAF00E1002C /* ARELNodeSpec.m in Sources */,
+				28710B7118C396D100E1002C /* ARELUpdateStatementNodeSpec.m in Sources */,
+				28710B5918C387B700E1002C /* ARELTrueNodeSpec.m in Sources */,
+				28E5D66118C5A404008FA7D2 /* ARELSelectManagerSpec.m in Sources */,
+				28E5D66E18C5DA9D008FA7D2 /* ARELToSqlVisitorSpec.m in Sources */,
+				28710B2C18C3295C00E1002C /* ARELOrNodeSpec.m in Sources */,
+				28710B6D18C3966700E1002C /* ARELSumNodeSpec.m in Sources */,
+				28710B6718C3950900E1002C /* ARELOverNodeSpec.m in Sources */,
+				28710B3918C330AE00E1002C /* ARELAsNodeSpec.m in Sources */,
+				28710B5718C3878C00E1002C /* ARELFalseNodeSpec.m in Sources */,
+				28710B4318C339EC00E1002C /* ARELCountNodeSpec.m in Sources */,
+				28710B3018C32D7A00E1002C /* ARELAndNodeSpec.m in Sources */,
+				28710B4A18C3829B00E1002C /* ARELDeleteStatementSpec.m in Sources */,
+				28710B2918C315C200E1002C /* ARELSqlLiteralNodeSpec.m in Sources */,
+				28710B3318C32F3300E1002C /* ARELBinaryNodeSpec.m in Sources */,
+				28710B6918C3953800E1002C /* ARELSelectCoreNodeSpec.m in Sources */,
+				28710B2018C3121C00E1002C /* ARELNotNodeSpec.m in Sources */,
+				28710AA118C2439700E1002C /* FakeConnection.m in Sources */,
+				28710B6F18C3969500E1002C /* ARELTableAliasNodeSpec.m in Sources */,
+				28710B7318C396F700E1002C /* ARELWindowNodeSpec.m in Sources */,
+				28710B4D18C383DA00E1002C /* ARELDistinctNodeSpec.m in Sources */,
+				28710B6B18C3955700E1002C /* ARELSelectStatementNodeSpec.m in Sources */,
+				28710B5318C384EF00E1002C /* ARELExtractNodeSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28710A6D18C235D300E1002C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28710A5518C235D300E1002C /* ArelCocoa */;
+			targetProxy = 28710A6C18C235D300E1002C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28710A7218C235D300E1002C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28710A7318C235D300E1002C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28710A7718C235D300E1002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28710A7818C235D300E1002C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28710A7A18C235D300E1002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ArelCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArelCocoa/ArelCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		28710A7B18C235D300E1002C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ArelCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArelCocoa/ArelCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		28710A7D18C235D300E1002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C877DC77CC4CD5914C9A08 /* Pods-ArelCocoaTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArelCocoaTests/ArelCocoaTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ArelCocoaTests/ArelCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		28710A7E18C235D300E1002C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C877DC77CC4CD5914C9A08 /* Pods-ArelCocoaTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArelCocoaTests/ArelCocoaTests-Prefix.pch";
+				INFOPLIST_FILE = "ArelCocoaTests/ArelCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28710A5118C235D300E1002C /* Build configuration list for PBXProject "ArelCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28710A7718C235D300E1002C /* Debug */,
+				28710A7818C235D300E1002C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28710A7918C235D300E1002C /* Build configuration list for PBXNativeTarget "ArelCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28710A7A18C235D300E1002C /* Debug */,
+				28710A7B18C235D300E1002C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28710A7C18C235D300E1002C /* Build configuration list for PBXNativeTarget "ArelCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28710A7D18C235D300E1002C /* Debug */,
+				28710A7E18C235D300E1002C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28710A4E18C235D300E1002C /* Project object */;
+}
