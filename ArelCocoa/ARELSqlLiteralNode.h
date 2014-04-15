@@ -21,6 +21,10 @@
 // THE SOFTWARE.
 
 #import "ARELNode.h"
+#import "ARELExpressions.h"
+#import "ARELPredictions.h"
+#import "ARELAliasPrediction.h"
+#import "ARELOrderPredications.h"
 
 #define AREL_SQL(str) [ARELSqlLiteralNode nodeWithString:str]
 

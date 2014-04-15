@@ -22,6 +22,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ARELExpressions.h"
+#import "ARELPredictions.h"
+#import "ARELAliasPrediction.h"
+#import "ARELOrderPredications.h"
+#import "ARELMath.h"
+
 @interface ARELAttribute : NSObject
 @property (readonly) NSString *name;
 

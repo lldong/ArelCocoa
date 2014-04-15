@@ -1,4 +1,4 @@
-// ARELExtractNode.m
+// ARELUpdateManager.m
 // 
 // Copyright (c) 2014 林藍東
 //
@@ -20,13 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "ARELExtractNode.h"
+#import "ARELUpdateManager.h"
 
-@implementation ARELExtractNode
-
-+ (void)load
-{
-    [ARELPredictions extendClass:self];
-}
+@implementation ARELUpdateManager
 
 @end

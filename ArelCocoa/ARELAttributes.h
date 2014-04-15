@@ -23,8 +23,9 @@
 #import "ARELAttribute.h"
 #import "ARELColumn.h"
 
-@interface ARELAttributes : NSObject
-
+@protocol ARELAttributes <NSObject>
 + (Class)for:(ARELColumn *)column;
+@end
 
+@interface ARELAttributes : NSObject
 @end

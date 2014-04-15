@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELExpressions.h"
+#import "ARELNodes.h"
 
 @implementation ARELExpressions
 

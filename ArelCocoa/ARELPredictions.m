@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELPredictions.h"
+#import "ARELNodes.h"
 #import "ARELSelectManager.h"
 
 @implementation ARELPredictions

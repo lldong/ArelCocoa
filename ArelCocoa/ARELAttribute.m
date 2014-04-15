@@ -26,12 +26,14 @@
     NSString *_name;
 }
 
-// TODO:
-// include Arel::Expressions
-// include Arel::Predications
-// include Arel::AliasPredication
-// include Arel::OrderPredications
-// include Arel::Math
++ (void)load
+{
+    [ARELMath extendClass:self];
+    [ARELExpressions extendClass:self];
+    [ARELPredictions extendClass:self];
+    [ARELAliasPrediction extendClass:self];
+    [ARELOrderPredications extendClass:self];
+}
 
 - (instancetype)initWithName:(NSString *)name
 {

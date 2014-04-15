@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELWindowPredictions.h"
+#import "ARELNodes.h"
 
 @implementation ARELWindowPredictions
 

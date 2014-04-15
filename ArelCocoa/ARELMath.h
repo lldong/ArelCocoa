@@ -21,9 +21,11 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELMath : ARELNode
+@class ARELNode, ARELGroupingNode, ARELDivisionNode, ARELMultiplicationNode;
+
+@protocol ARELMath <NSObject>
 
 - (ARELGroupingNode *)add:(ARELNode *)other;
 
@@ -33,4 +35,7 @@
 
 - (ARELMultiplicationNode *)mult:(ARELNode *)other;
 
+@end
+
+@interface ARELMath : RXConcreteProtocol <ARELMath>
 @end

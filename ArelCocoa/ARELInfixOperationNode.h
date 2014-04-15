@@ -22,6 +22,12 @@
 
 #import "ARELBinaryNode.h"
 
+#import "ARELExpressions.h"
+#import "ARELPredictions.h"
+#import "ARELOrderPredications.h"
+#import "ARELAliasPrediction.h"
+#import "ARELMath.h"
+
 @interface ARELInfixOperationNode : ARELBinaryNode
 
 - (instancetype)initWithOperator:(NSString *)operator

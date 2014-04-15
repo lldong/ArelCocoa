@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELOrderPredications.h"
+#import "ARELNodes.h"
 
 @implementation ARELOrderPredications
 

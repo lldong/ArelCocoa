@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELAliasPrediction.h"
+#import "ARELNodes.h"
 
 @implementation ARELAliasPrediction
 

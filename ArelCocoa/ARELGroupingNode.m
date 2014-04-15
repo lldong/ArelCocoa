@@ -23,6 +23,10 @@
 #import "ARELGroupingNode.h"
 
 @implementation ARELGroupingNode
-// TODO: include Arel::Predications
+
++ (void)load
+{
+    [ARELPredictions extendClass:self];
+}
 
 @end

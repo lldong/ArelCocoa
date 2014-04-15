@@ -24,4 +24,8 @@
 
 @interface ARELDeleteStatementNode : ARELBinaryNode
 
+- (ARELNode *)relation;
+
+- (ARELNode *)wheres;
+
 @end

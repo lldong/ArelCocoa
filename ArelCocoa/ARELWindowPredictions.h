@@ -21,10 +21,14 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELWindowPredictions : ARELNode
+@class ARELNode, ARELOverNode;
+@protocol ARELWindowPredictions <NSObject>
 
 - (ARELOverNode *)over:(ARELNode *)expr;
 
+@end
+
+@interface ARELWindowPredictions : RXConcreteProtocol <ARELWindowPredictions>
 @end

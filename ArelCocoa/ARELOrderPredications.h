@@ -21,11 +21,17 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELOrderPredications : ARELNode
+@class ARELAscendingNode, ARELDescendingNode;
+
+@protocol ARELOrderPredications <NSObject>
 
 - (ARELAscendingNode *)asc;
+
 - (ARELDescendingNode *)desc;
 
+@end
+
+@interface ARELOrderPredications : RXConcreteProtocol <ARELOrderPredications>
 @end

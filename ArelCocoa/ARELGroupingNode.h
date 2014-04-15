@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELUnaryNode.h"
+#import "ARELPredictions.h"
 
 @interface ARELGroupingNode : ARELUnaryNode
 

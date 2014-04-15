@@ -30,6 +30,11 @@
 
 @implementation ARELNode
 
++ (void)load
+{
+    [ARELFactoryMethods extendClass:self];
+}
+
 - (id)accept:(ARELVisitor *)visitor
 {
     return [visitor visit:self];

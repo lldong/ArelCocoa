@@ -21,7 +21,8 @@
 // THE SOFTWARE.
 
 #import "ARELUnaryNode.h"
+#import "ARELPredictions.h"
 
-@interface ARELExtractNode : ARELUnaryNode
+@interface ARELExtractNode : ARELUnaryNode <ARELPredictions>
 
 @end

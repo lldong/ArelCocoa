@@ -26,11 +26,13 @@
     NSString *_string;
 }
 
-// TODO:
-// include Arel::Expressions
-// include Arel::Predications
-// include Arel::AliasPredication
-// include Arel::OrderPredications
++ (void)load
+{
+    [ARELExpressions extendClass:self];
+    [ARELPredictions extendClass:self];
+    [ARELAliasPrediction extendClass:self];
+    [ARELOrderPredications extendClass:self];
+}
 
 + (instancetype)nodeWithString:(NSString *)string
 {

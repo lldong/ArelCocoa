@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELFactoryMethods.h"
+#import "ARELNodes.h"
 
 @implementation ARELFactoryMethods
 

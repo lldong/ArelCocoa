@@ -28,8 +28,11 @@
     ARELSqlLiteralNode *_alias;
 }
 
-// TODO: include Arel::Predications
-// TODO: include Arel::WindowPredications
++ (void)load
+{
+    [ARELPredictions extendClass:self];
+    [ARELWindowPredictions extendClass:self];
+}
 
 - (instancetype)initWithExpressions:(NSArray *)expressions alias:(ARELSqlLiteralNode *)alias;
 {

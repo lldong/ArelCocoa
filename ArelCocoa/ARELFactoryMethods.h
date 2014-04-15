@@ -21,9 +21,14 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELFactoryMethods : NSObject
+@class ARELNode, ARELTrueNode, ARELFalseNode, ARELOnNode, ARELAndNode,
+       ARELGroupingNode, ARELNamedFunctionNode, ARELStringJoinNode,
+       ARELTableAliasNode, ARELJoinNode, ARELSqlLiteralNode;
+
+@protocol ARELFactoryMethods <NSObject>
+@optional
 
 - (ARELTrueNode *)createTrue;
 
@@ -43,4 +48,7 @@
 
 - (ARELJoinNode *)createJoin:(ARELNode *)to constrain:(ARELNode *)constrain class:(Class)klass;
 
+@end
+
+@interface ARELFactoryMethods : RXConcreteProtocol <ARELFactoryMethods>
 @end

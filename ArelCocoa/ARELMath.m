@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELMath.h"
+#import "ARELNodes.h"
 
 @implementation ARELMath
 

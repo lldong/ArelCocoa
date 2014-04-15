@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import "ARELBinaryNode.h"
+#import "ARELAliasPrediction.h"
 
 @interface ARELOverNode : ARELBinaryNode
 

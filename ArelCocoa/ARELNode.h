@@ -21,11 +21,12 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "ARELFactoryMethods.h"
 
 @class ARELVisitor;
 
 // Abstract base class for all AST nodes
-@interface ARELNode : NSObject
+@interface ARELNode : NSObject <ARELFactoryMethods>
 
 // Factory method to create a ARELNotNode that has the recipient of
 // the caller as a child.
@@ -42,4 +43,5 @@
 - (NSString *)toSQL;
 
 - (id)accept:(ARELVisitor *)visitor;
+
 @end

@@ -26,11 +26,14 @@
     NSString *_operator;
 }
 
-//include Arel::Expressions
-//include Arel::Predications
-//include Arel::OrderPredications
-//include Arel::AliasPredication
-//include Arel::Math
++ (void)load
+{
+    [ARELMath extendClass:self];
+    [ARELExpressions extendClass:self];
+    [ARELPredictions extendClass:self];
+    [ARELAliasPrediction extendClass:self];
+    [ARELOrderPredications extendClass:self];
+}
 
 - (instancetype)initWithOperator:(NSString *)operator leftNode:(ARELNode *)leftNode rightNode:(ARELNode *)rightNode
 {

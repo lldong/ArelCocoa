@@ -20,13 +20,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "ARELNodes.h"
 #import <objc/runtime.h>
+#import "ARELNodes.h"
 
 SPEC_BEGIN(ARELNode)
 
-xit(@"implement factory methods", ^ {
-
+it(@"implement factory methods", ^ {
+    expect([ARELNode new]).to.respondTo(@selector(createJoin:constrain:class:));
 });
 
 it(@"all nodes are subclass of `ARELNode`", ^ {
@@ -52,7 +52,7 @@ it(@"all nodes are subclass of `ARELNode`", ^ {
 
 describe(@"-eachNode:", ^{
     xit(@"iterate through AST", ^ {
-    
+        
     });
     
     xit(@"nodes will be yieled depth-first", ^ {

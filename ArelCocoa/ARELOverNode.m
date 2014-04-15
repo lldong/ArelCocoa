@@ -24,6 +24,9 @@
 
 @implementation ARELOverNode
 
-// TODO: include Arel::AliasPredication
++ (void)load
+{
+    [ARELAliasPrediction extendClass:self];
+}
 
 @end

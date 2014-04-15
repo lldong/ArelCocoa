@@ -21,10 +21,13 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELPredictions : ARELNode
+@class ARELNode, ARELNotEqualNode, ARELGroupingNode, ARELEqualityNode, ARELMatchesNode, ARELDoesNotMatchNode,
+       ARELGreaterThanOrEqualNode, ARELGreaterThanNode, ARELLessThanNode, ARELLessThanOrEqualNode;
 
+@protocol ARELPredictions <NSObject>
+@optional
 - (ARELNotEqualNode *)notEq:(ARELNode *)other;
 - (ARELGroupingNode *)notEqAny:(NSArray *)others;
 - (ARELGroupingNode *)notEqAll:(NSArray *)others;
@@ -67,5 +70,9 @@
 
 - (ARELGroupingNode *)groupingAny:(NSArray *)others withSelector:(SEL)selector;
 - (ARELGroupingNode *)groupingAll:(NSArray *)others withSelector:(SEL)selector;
+
+@end
+
+@interface ARELPredictions : RXConcreteProtocol <ARELPredictions>
 
 @end

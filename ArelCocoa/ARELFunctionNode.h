@@ -21,9 +21,10 @@
 // THE SOFTWARE.
 
 #import "ARELNode.h"
+#import "ARELPredictions.h"
+#import "ARELWindowPredictions.h"
 
 @class ARELSqlLiteralNode;
-
 @interface ARELFunctionNode : ARELNode
 
 - (instancetype)initWithExpressions:(NSArray *)expressions alias:(ARELSqlLiteralNode *)alias;

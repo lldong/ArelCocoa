@@ -21,9 +21,11 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "ARELNodes.h"
+#import "RXConcreteProtocol.h"
 
-@interface ARELExpressions : ARELNode
+@class ARELNode, ARELCountNode, ARELSumNode, ARELMaxNode, ARELMinNode, ARELAvgNode, ARELExtractNode;
+
+@protocol ARELExpressions <NSObject>
 
 - (ARELCountNode *)count;
 
@@ -39,5 +41,8 @@
 
 - (ARELExtractNode *)extract:(ARELNode *)field;
 
+@end
+
+@interface ARELExpressions : RXConcreteProtocol <ARELExpressions>
 
 @end

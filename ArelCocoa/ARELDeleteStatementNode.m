@@ -24,4 +24,14 @@
 
 @implementation ARELDeleteStatementNode
 
+- (ARELNode *)relation
+{
+    return [self leftNode];
+}
+
+- (ARELNode *)wheres
+{
+    return [self rightNode];
+}
+
 @end
