@@ -27,12 +27,12 @@
 
 - (ARELAscendingNode *)asc
 {
-    return [[ARELAscendingNode alloc] initWithExpression:self];
+    return [[ARELAscendingNode alloc] initWithExpression:(ARELNode *)self];
 }
 
 - (ARELDescendingNode *)desc
 {
-    return [[ARELDescendingNode alloc] initWithExpression:self];
+    return [[ARELDescendingNode alloc] initWithExpression:(ARELNode *)self];
 }
 
 @end

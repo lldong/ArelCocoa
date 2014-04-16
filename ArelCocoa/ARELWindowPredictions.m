@@ -27,7 +27,7 @@
 
 - (ARELOverNode *)over:(ARELNode *)expr
 {
-    return [[ARELOverNode alloc] initWithLeftNode:self rightNode:expr];
+    return [[ARELOverNode alloc] initWithLeftNode:(ARELNode *)self rightNode:expr];
 }
 
 @end

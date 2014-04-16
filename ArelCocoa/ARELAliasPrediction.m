@@ -27,7 +27,7 @@
 
 - (ARELAsNode *)as:(ARELNode *)other
 {
-    return [[ARELAsNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELAsNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 @end

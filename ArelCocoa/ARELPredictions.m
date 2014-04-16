@@ -30,7 +30,7 @@
 
 - (ARELNotEqualNode *)notEq:(ARELNode *)other
 {
-    return [[ARELNotEqualNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELNotEqualNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)notEqAny:(NSArray *)others
@@ -47,7 +47,7 @@
 
 - (ARELEqualityNode *)eq:(ARELNode *)other
 {
-    return [[ARELEqualityNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELEqualityNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)eqAny:(NSArray *)others
@@ -65,10 +65,10 @@
 - (ARELInNode *)in:(id)other
 {
     if ([other isKindOfClass:[ARELSelectManager class]]) {
-        return [[ARELInNode alloc] initWithLeftNode:self rightNode:[other ast]];
+        return [[ARELInNode alloc] initWithLeftNode:(ARELNode *)self rightNode:[other ast]];
     }
     
-    return [[ARELInNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELInNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)inAny:(NSArray *)others
@@ -86,10 +86,10 @@
 - (ARELNotInNode *)notIn:(id)other
 {
     if ([other isKindOfClass:[ARELSelectManager class]]) {
-        return [[ARELNotInNode alloc] initWithLeftNode:self rightNode:[other ast]];
+        return [[ARELNotInNode alloc] initWithLeftNode:(ARELNode *)self rightNode:[other ast]];
     }
     
-    return [[ARELNotInNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELNotInNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)noInAny:(NSArray *)others
@@ -106,7 +106,7 @@
 
 - (ARELMatchesNode *)matches:(ARELNode *)other
 {
-    return [[ARELMatchesNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELMatchesNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)matchesAny:(NSArray *)others
@@ -123,7 +123,7 @@
 
 - (ARELDoesNotMatchNode *)doesNotMatch:(ARELNode *)other
 {
-    return [[ARELDoesNotMatchNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELDoesNotMatchNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)doesNotMatchAny:(NSArray *)others
@@ -140,7 +140,7 @@
 
 - (ARELGreaterThanOrEqualNode *)gtEq:(ARELNode *)right
 {
-    return [[ARELGreaterThanOrEqualNode alloc] initWithLeftNode:self rightNode:right];
+    return [[ARELGreaterThanOrEqualNode alloc] initWithLeftNode:(ARELNode *)self rightNode:right];
 }
 
 - (ARELGroupingNode *)gtEqAny:(NSArray *)others
@@ -157,7 +157,7 @@
 
 - (ARELGreaterThanNode *)gt:(ARELNode *)right
 {
-    return [[ARELGreaterThanNode alloc] initWithLeftNode:self rightNode:right];
+    return [[ARELGreaterThanNode alloc] initWithLeftNode:(ARELNode *)self rightNode:right];
 }
 
 - (ARELGroupingNode *)gtAny:(NSArray *)others
@@ -174,7 +174,7 @@
 
 - (ARELLessThanNode *)lt:(ARELNode *)right
 {
-    return [[ARELLessThanNode alloc] initWithLeftNode:self rightNode:right];
+    return [[ARELLessThanNode alloc] initWithLeftNode:(ARELNode *)self rightNode:right];
 }
 
 - (ARELGroupingNode *)ltAny:(NSArray *)others
@@ -191,7 +191,7 @@
 
 - (ARELLessThanOrEqualNode *)ltEq:(ARELNode *)right
 {
-    return [[ARELLessThanOrEqualNode alloc] initWithLeftNode:self rightNode:right];
+    return [[ARELLessThanOrEqualNode alloc] initWithLeftNode:(ARELNode *)self rightNode:right];
 }
 
 - (ARELGroupingNode *)ltEqAny:(NSArray *)others

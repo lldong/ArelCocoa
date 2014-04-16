@@ -27,24 +27,24 @@
 
 - (ARELMultiplicationNode *)mult:(ARELNode *)other
 {
-    return [[ARELMultiplicationNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELMultiplicationNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 - (ARELGroupingNode *)add:(ARELNode *)other
 {
-    ARELNode *node = [[ARELAdditionNode alloc] initWithLeftNode:self rightNode:other];
+    ARELNode *node = [[ARELAdditionNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
     return [[ARELGroupingNode alloc] initWithExpression:node];
 }
 
 - (ARELGroupingNode *)sub:(ARELNode *)other
 {
-    ARELNode *node = [[ARELSubtractionNode alloc] initWithLeftNode:self rightNode:other];
+    ARELNode *node = [[ARELSubtractionNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
     return [[ARELGroupingNode alloc] initWithExpression:node];
 }
 
 - (ARELDivisionNode *)div:(ARELNode *)other
 {
-    return [[ARELDivisionNode alloc] initWithLeftNode:self rightNode:other];
+    return [[ARELDivisionNode alloc] initWithLeftNode:(ARELNode *)self rightNode:other];
 }
 
 @end
